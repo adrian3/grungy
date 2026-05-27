@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grungy</title>
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+    <script type="text/javascript" charset="utf-8" src="js/caman.full.min.js"></script>
+    <script src="js/touchswitch.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body onload="onBodyLoad()">
+    <div id="jqt">
+        <!-- Settings -->
+        <div id="settings" ontouchmove="BlockMove(event);">
+            <div class="toolbar">
+                <a class="back" href="#">Back</a>
+            </div>
+            <ul class="rounded">
+                <li class="arrow"><a href="#howtouse">How to use</a>
+                </li>
+                <li><div class="title">Photo source:</div>
+                <a href="#"></a>
+                    <a href="#" id="camerasource" onclick="localStorage.setItem('imageSource', 'camera'); imageSource='camera';$('#camerasource').addClass('highlight');$('#librarysource').removeClass('highlight');$('#promptsource').removeClass('highlight');">Camera</a>
+                    <a href="#" id="librarysource" onclick="localStorage.setItem('imageSource', 'library'); imageSource='library';$('#librarysource').addClass('highlight');$('#camerasource').removeClass('highlight');$('#promptsource').removeClass('highlight');">Library</a>
+                    <a href="#" id="promptsource" onclick="localStorage.setItem('imageSource', 'prompt'); imageSource='prompt';$('#promptsource').addClass('highlight');$('#camerasource').removeClass('highlight');$('#librarysource').removeClass('highlight');">Ask me</a>
+                    </li>
+                    <li><div class="title">Default Color Setting:</div>
+                <a href="#"></a>
+                        <a href="#" id="colorsetting" onclick="setColor('colored');">Color</a> 
+                        <a href="#" id="blacksetting" onclick="setColor('bw');">Black &amp; White</a>
+                    </li>
+
+                    <li class="arrow">
+                        <script>
+                        document.write("<a href=\"#\" target=\"_webapp\" " + touchswitch + "=\"resetApp();\">Reset app</a>");
+                        </script>
+                    </li>
+                    <li class="arrow"><a href="#about">About</a>
+                    </li>
+            </ul>
+
+        </div>
+        <!-- end settings -->
+
+        <!-- Home Screen-->
+        <div id="home" class="current" ontouchmove="BlockMove(event);">
+            <a href="#settings">
+                <img class="settingbutton" src="images/gear.svg">
+            </a>
+            <div id="preset-example-image">
+                <img id="canvasImage" src="images/grungy.jpg" width="612" height="612" data-camanwidth="612" data-camanheight="612" />
+                <div id="vignette">&nbsp;</div>
+                <div id="burn">&nbsp;</div>
+                <div id="scratches">&nbsp;</div>
+                <div id="border">&nbsp;</div>
+            </div>
+
+            <div id="start">
+                <script type="text/javascript" charset="utf-8">
+                document.write('<a href="#"  ' + touchswitch + '="animateOff(); showNav();">Start</a>');
+                </script>
+            </div>
+            <!-- #start -->
+            <div id="photonav">
+                <script type="text/javascript" charset="utf-8">
+                document.write('<a href="#" ' + touchswitch + '="newGrunge();">New</a>');
+                </script>
+                <script type="text/javascript" charset="utf-8">
+                document.write('<a href="#" ' + touchswitch + '="grungeLess();">-</a>');
+                </script>
+                <script type="text/javascript" charset="utf-8">
+                document.write('<a class="grunge" href="#" ' + touchswitch + '="grungify();">Grunge</a>');
+                </script>
+                <script type="text/javascript" charset="utf-8">
+                document.write('<a href="#" ' + touchswitch + '="grungeMore();">+</a>');
+                </script>
+                <script type="text/javascript" charset="utf-8">
+                document.write('<a href="#" ' + touchswitch + '="captureScreen(); trackpage(\'/photo-saved\');">Save</a>');
+                </script>
+            </div>
+            <canvas style="display:none;" id="example-image"></canvas>
+        </div>
+
+
+        <!-- About -->
+        <div id="about" ontouchmove="BlockMove(event);">
+            <div class="toolbar">
+                <a class="back" href="#">Back</a>
+                <!-- <h1>Credits</h1> -->
+            </div>
+            <p>Hi, my name is Adrian Hanft and I created this app. I am a photographer, designer, and app developer. I created this app because I love to push photos away from the pixel-perfect images that digital cameras spit out. I collect and modify cameras for fun. Remember the Lego camera that went viral back in 2006? That was my creation. I have a photo blog where I document my experiments called <a href="http://www.foundphotography.com" target="_blank">Found Photography</a>.</p>
+            <p>I am committed to the development of Grungy and I hope you like it. If you have ideas or suggestions <a href="https://twitter.com/ade3" target="_blank">please message me</a>. Obviously, I am only one person, but I will do whatever I can to make sure that Grungy is one of your favorite apps. Thank you for using it!</p>
+            <p>
+                <em>Oh, one more thing.</em>The success of this app depends on good review on iTunes. Would you take a moment to give it a good rating? I would greatly appreciate it!</p>
+            <p><a class="lobster" href="http://adrian3.com" target="_blank">- Adrian</a><br /><a href='http://adrian3.com' target='_blank'>adrian3.com</a>
+            </p>
+        </div>
+
+
+        <!-- How To Use -->
+        <div id="howtouse" ontouchmove="BlockMove(event);">
+            <a href="#home">
+                <img src="images/instructions.jpg" />
+            </a>
+        </div>
+    </div>
+    <!-- end jqtouch -->
+
+    <!-- This is the canvas where the final image is placed so it can be saved to the library -->
+    <canvas id="currentphotoholder" width="612" height="612"></canvas>
+
+	  <script src="js/jqtouch.min.js" type="text/javascript" charset="utf-8"></script>
+	  <script src="js/jquery-1.11.0.min.js" type="application/x-javascript" charset="utf-8"></script>
+	  <script src="js/jqtouch-jquery.min.js" type="application/x-javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jNotify.jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/filter-settings.js"></script>
+    <script src="js/fastclick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.blockUI.js"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    app.initialize();
+    </script>
+
+</body>
+
+</html>

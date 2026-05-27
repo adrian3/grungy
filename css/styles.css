@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'Lobster Two';
+  src: url("../fonts/LobsterTwo-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+#jqt {
+	background-color: #222;
+		/*background: #000 url(../images/background.png) no-repeat 0 0px;
+	-webkit-background-size: 320px 460px;*/ 
+
+}
+#jqt > * {
+	background: none;
+}
+#jqt #camerasource.highlight, #jqt #librarysource.highlight, #jqt #promptsource.highlight, #jqt #blacksetting.highlight, #jqt #colorsetting.highlight {
+	text-decoration: underline;
+	font-weight: normal;
+}
+#jqt #blacksetting, #jqt #colorsetting, #jqt .highlight, #jqt a {
+		font-weight: normal;
+}
+#jqt ul li .title {
+	font-variant: normal;
+	font-size: 17px;
+	float: left;
+	width: 100%;
+	color: #fff;
+	display: block;
+	height: 20px;
+}
+#jqt .arrow a {
+	font-weight: bold;
+}
+#howtouse img {
+	width: 320px;
+	height: 480px;
+}
+#home {
+	width: 320px;
+	margin: 0 auto;
+	position: relative;
+}
+#photonav, #start {
+	text-align: center;
+	float: none;
+	overflow: hidden;
+	width: 320px;
+	height: 60px;
+	position: absolute;
+	left: 0;
+}
+.lobster, a.lobster {
+	font-family: "Lobster Two";
+	text-decoration: none;
+}
+#jqt .toolbar a.back {
+	font-family: "Lobster Two";
+	color: #fff;
+}
+
+#start {
+	position: absolute;
+}
+#photonav {
+	display: none;
+}
+#start a, #photonav a {
+	text-decoration: none;
+	font-family: "Lobster Two";
+	/*font-weight: bold;*/
+	font-size: 20px;
+	padding: 10px;
+	color: #666;
+    text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0;
+}
+a {
+	color: #fff;
+}
+#photonav a.grunge {
+	font-size: 28px;
+	color: #fff;
+}
+p {
+	color: #000;
+}
+
+#jqt a#camerasource, #jqt a#librarysource, #jqt a#promptsource, #jqt a#blacksetting, #jqt a#colorsetting {
+	font-size: 12px;
+	font-weight: normal;
+	color: #fff;
+	margin: -10px 0;
+}
+#jqt ul.rounded {
+	-webkit-border-radius: 8px;
+	margin: 5px;
+}
+#jqt ul.rounded li.title {
+	background: #000 no-repeat;
+}
+#jqt .blockPage, .blockMsg {
+	position: absolute;
+	float: left;
+	margin: 0;
+}
+#jqt h1 {
+	padding: 7px;
+	margin: 0;
+}
+
+#jqt h1.title {
+	color: #fff;
+}
+#jqt .toolbar h1 {
+	margin-top: -5px;
+	padding: 0;
+	height: 25px;
+	font-size: 16px;
+}
+#jqt #settings ul.rounded li {
+	font-family: "Lobster Two";
+
+	  background-color: #000;
+}
+#jqt div.toolbar {
+	background: none;
+	border: none;
+
+	background-color: #000;
+  /*background: url(../images/footer.png?) repeat-x center bottom;*/
+	-webkit-background-size: 320px 50px; 
+  bottom: 0;
+	  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,1);
+}
+.toolbar {
+	text-align: left;
+}
+.toolbar a {
+	text-decoration: none;
+    text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0;
+    color: #fff;
+}
+
+img.settingbutton {
+	width: 25px;
+	float: right;
+	margin: 3px 0 ;
+}
+.blockUI {
+	float: left;
+	margin: 0;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#jqt span.title {
+	/*font-weight: bold;*/
+	color: #000;
+	margin: -3px 0 0px 0;
+	padding: 0;
+	width: 306px;
+	min-height: 19px;
+	float: left;
+}
+
+span.reset-app {
+	font-size: 13px;
+	font-style: italic;
+	float: left;
+	margin: -2px 0 -2px 0;
+}
+
+#jqt ul {
+	border-color: #fff;
+	width: 300px;	
+	text-shadow:none;
+	font-weight: normal;
+}
+#jqt ul li a {
+	color: #fff;
+}
+#jqt ul.rounded li {
+	margin-left:0;
+	padding:10px;
+}
+
+#jqt ul li.arrow, #jqt ul li {
+	color: #fff;
+	background: #222 none no-repeat;
+	border-color: #fff;
+	margin-left: 0px;
+	padding-left:10px;
+}
+
+#about a {
+	color: #fff;
+}
+
+#about p {
+	color: #fff;
+	font-size: 13px;
+	line-height: 15px;
+	width: 300px;
+	padding: 12px 12px 0;
+}
+#preset-example-image {
+	width: 306px;
+	margin: 39px auto 10px;
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+canvas {
+	width: 306px;
+	height: 306px;
+}
+
+#vignette img, #border img, #scratches img, #burn img {
+	width: 306px;
+	margin: 0px;
+	top: 0;
+}
+
+#vignette, #border, #scratches, #burn {
+	position: absolute;
+	width: 306px;
+	height: 306px;
+	top: 0;
+	margin: 70px 0 0 0;
+}
+
+
+#vignette, #scratches, #burn, #border {
+	-webkit-background-size: 306px 306px;  
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+#vignette {
+	z-index: 1;
+}
+#burn {
+	z-index: 2;
+}
+#scratches {
+	z-index: 3;
+}
+#border {
+	z-index: 4;
+}
+
+/* @group Retina Display */
+
+/* @end */
+
+
+
+
+/* @group iPad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+
+
+}
+
+/* @end iPad Styles*/
+
+
+
+
+
+
+
+
+
