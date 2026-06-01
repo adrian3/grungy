@@ -6,7 +6,7 @@ Standalone web version of Grungy.
 
 Use [`index.html`](index.html) at the repo root as the Pages entrypoint.
 The repo also includes `.nojekyll` so GitHub Pages serves the static files without Jekyll processing.
-Live site: [https://adrian3.github.io/grungy/](https://adrian3.github.io/grungy/)
+GitHub: [https://adrian3.github.io/grungy/](https://adrian3.github.io/grungy/)
 
 ## Notes
 
