@@ -97,8 +97,8 @@ var scratches = [
                   "effect" : "filters/scratch21.png"},{
                   "effect" : "filters/scratch22.png"},{
                   "effect" : "filters/scratch23.png"},{
-                  "effect" : "filters/scratch24.png"},{
-                  "effect" : "filters/scratch25.png"},{
+                  "effect" : "filters/scratch22.png"},{
+                  "effect" : "filters/scratch23.png"},{
 
                   "effect" : "filters-inverted/scratch1.png"},{
                   "effect" : "filters-inverted/scratch2.png"},{
@@ -123,8 +123,8 @@ var scratches = [
                   "effect" : "filters-inverted/scratch21.png"},{
                   "effect" : "filters-inverted/scratch22.png"},{
                   "effect" : "filters-inverted/scratch23.png"},{
-                  "effect" : "filters-inverted/scratch24.png"},{
-                  "effect" : "filters-inverted/scratch25.png"
+                  "effect" : "filters-inverted/scratch22.png"},{
+                  "effect" : "filters-inverted/scratch23.png"
 }
 ];
 var border = [

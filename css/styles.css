@@ -276,3 +276,13 @@ canvas {
 
 
 
+
+/* Respect mobile safe areas in standalone mode. */
+body { background: #222; }
+#jqt { padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); }
+#home { max-width: 100%; }
+#jqt .pwa-help { padding: 20px; color: #fff; }
+#jqt .pwa-help p { color: #ddd; line-height: 1.5; }
+#jqt .pwa-help h2 { color: #fff; }
+#install-button { padding: 12px 20px; border: 0; border-radius: 6px; background: #fff; color: #222; font-size: 16px; }
+#install-button[hidden] { display: none; }

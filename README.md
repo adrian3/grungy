@@ -26,15 +26,15 @@ The authenticity of the grunge comes from the care taken in gathering the textur
 3. Adjust the intensity with **+** and **−**. Open settings to change the color mode.
 4. Tap **Save** to download your image. On mobile, you may need to open the downloaded image and save it to Photos.
 
-Grungy creates square images at **612 × 612 pixels**—ideal for small creative experiments and sharing.
+The original app worked with **612 × 612 pixel** images; the web edition exports at the loaded image’s dimensions.
 
 ## From iOS to the web
 
-Originally released for iOS, Grungy reached **47,131 App Store downloads**. It is now available free on the web, bringing the original textures and playful approach to photo editing back to your browser.
+Originally released for iOS, Grungy reached **47,131 App Store downloads**. It is now available free as a progressive web app (PWA), bringing the original textures and playful approach to photo editing back to your browser.
 
 ## Keep it on your home screen
 
-Open Grungy in your browser, or add it to your home screen for quick access.
+Install Grungy for its own home screen icon and app window. Once the textures finish downloading, it works offline too. The first offline setup downloads about **120 MB** of textures; keep the app open until **Settings → Install Grungy** says it is ready.
 
 **iPhone or iPad**
 1. Open the app in **Safari**.
@@ -44,7 +44,7 @@ Open Grungy in your browser, or add it to your home screen for quick access.
 
 **Android**
 1. Open the app in **Chrome**.
-2. Tap **⋮** → **Add to home screen**, then **Create shortcut** if prompted.
+2. Tap **⋮** → **Add to home screen** → **Install** (or tap **Install Grungy** in the app’s settings when available).
 3. Follow the prompts, then launch it from your home screen.
 
 Need help? See [Apple’s home screen instructions](https://support.apple.com/guide/iphone/open-as-web-app-iphea86e5236/ios) or [Chrome’s installation guide](https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=en).

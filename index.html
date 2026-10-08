@@ -1,7 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#222222">
+    <meta name="description" content="Photo un-enhancement with authentic, hand-picked grunge textures. Free, installable, and available offline.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Grungy">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="pwa-192.png">
     <title>Grungy</title>
   <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -38,6 +48,8 @@
                         <script>
                         document.write("<a href=\"#\" target=\"_webapp\" " + touchswitch + "=\"resetApp();\">Reset app</a>");
                         </script>
+                    </li>
+                    <li class="arrow"><a href="#install">Install Grungy</a>
                     </li>
                     <li class="arrow"><a href="#about">About</a>
                     </li>
@@ -86,6 +98,19 @@
         </div>
 
 
+        <div id="install">
+            <div class="toolbar"><a class="back" href="#settings">Back</a><h1>Install Grungy</h1></div>
+            <div class="pwa-help">
+                <img src="apple-touch-icon.png" width="90" height="90" alt="Grungy app icon">
+                <h2>Grungy, ready when you are.</h2>
+                <p>Add Grungy to your home screen to open it like an app.</p>
+                <button id="install-button" type="button" hidden>Install Grungy</button>
+                <p><strong>iPhone / iPad:</strong> Open in Safari, tap Share → Add to Home Screen. Turn on Open as Web App if shown, then tap Add.</p>
+                <p><strong>Android:</strong> Open in Chrome, tap ⋮ → Add to home screen → Install.</p>
+                <p id="offline-status" role="status">Preparing Grungy for offline use. The textures download once (about 120 MB). Keep this page open until they are ready.</p>
+            </div>
+        </div>
+
         <!-- About -->
         <div id="about" ontouchmove="BlockMove(event);">
             <div class="toolbar">
@@ -125,6 +150,7 @@
     app.initialize();
     </script>
 
+    <script src="js/pwa.js"></script>
 </body>
 
 </html>
